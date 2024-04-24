@@ -224,6 +224,12 @@ footer address{
 header img{
   width: 90px;
   margin: 0 auto;
+  transform: scaleX(-1) 
+  /* Flipped Icon */
+}
+/* Font Size Fixed */
+header a{
+  font-size: 1.5rem;
 }
 
 #hero{
@@ -266,9 +272,10 @@ header img{
 
 /* -----------------------SMALL STYLES--------------------- */
 @media screen and (min-width: 500px){
+  /* Added column for all header elements */
   header{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr 3fr;
     align-items: center;
   }
   
@@ -276,6 +283,12 @@ header img{
     grid-column: 2/3;
     grid-row: 1/2;
     text-align: left;
+  } 
+  h2{
+    margin: 0;
+  }
+  h3 {
+    visibility: hidden;
   }
   
   #logo{
@@ -285,11 +298,41 @@ header img{
   }
   
   nav{
-    grid-column: 1/-1;
+    grid-column: 3/-1;
+  }
+/* Fixed width and centering */
+  #homeMain{
+    max-width: 90%;
+    margin: auto;
+    img{
+      width: 80%;
+    }
+  }
+  /* Article spacing between footer */
+  article{
+    padding-bottom: 1rem;
+  }  
+  /* Fixed spacing and order */
+  footer div #socialMedia{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+  }
+
+  footer a{
+    padding: 0;
+  }
+  footer section > h2{
+    padding: 0;
+    text-align: unset;
+  }
+  #socialMedia h2{
+    margin: 0;
   }
 }
 
 @media screen and (min-width: 600px){
+
+
   #aboutPlants div{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -322,6 +365,8 @@ header img{
   #contactUs p{
     grid-row: 2/3;
   }
+
+
 }
 
 /* -----------------------MED SCREEN STYLES-------------------- */
@@ -342,6 +387,19 @@ header img{
     grid-template-columns: 1fr 2fr 3fr;
   }
   
+  /* Centered and altered article and image width to mimic mockup */
+  #homeMain{
+    max-width: 80%;
+    margin: auto;
+    img{
+      width: 75%;
+    }
+  }
+  /* Changed to invis */
+h3{
+  visibility: hidden;
+}
+
   nav{
     grid-column: 3/-1;
     max-width: 600px;
@@ -370,5 +428,10 @@ header img{
 
   address a{
       padding: 0.5rem;
+  }
+
+  footer div #socialMedia{
+    grid-column: 1/2;
+    grid-row: 1/-1;
   }
 }
