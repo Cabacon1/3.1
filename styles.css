@@ -116,6 +116,7 @@ h2{
 }
 
 h3{
+  display: none;
   font-size: 1.1rem;
 }
 
@@ -171,6 +172,13 @@ p{
   color: var(--white);
   padding: 1rem;
 }
+footer div{
+  display: grid;
+  grid-template-rows: auto auto;
+}
+footer #socialMedia{
+  grid-row: 1/2;
+}
 
 footer section{
   max-width: 275px;
@@ -187,7 +195,7 @@ footer h2, footer a, footer span{
 }
 
 footer a{
-  padding: 1rem 0;
+  padding-bottom: .5rem;
 }
 
 address a:first-of-type{
@@ -229,7 +237,7 @@ header img{
 }
 /* Font Size Fixed */
 header a{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 #hero{
@@ -288,6 +296,7 @@ header a{
     margin: 0;
   }
   h3 {
+    display: block;
     visibility: hidden;
   }
   
@@ -365,6 +374,7 @@ header a{
   #contactUs p{
     grid-row: 2/3;
   }
+  
 
 
 }
@@ -397,6 +407,7 @@ header a{
   }
   /* Changed to invis */
 h3{
+  display: block;
   visibility: hidden;
 }
 
