@@ -1,4 +1,4 @@
-
+/* Chad Bacon */
 @import url('https://fonts.googleapis.com/css2?family=Actor&family=Candal&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -313,10 +313,10 @@ header a{
   #homeMain{
     max-width: 90%;
     margin: auto;
-    img{
-      width: 80%;
-    }
   }
+  #homeMain img{
+    width: 90vw;
+}
   /* Article spacing between footer */
   article{
     padding-bottom: 1rem;
@@ -401,10 +401,10 @@ header a{
   #homeMain{
     max-width: 80%;
     margin: auto;
-    img{
-      width: 75%;
-    }
   }
+  #homeMain img{
+    width: 60vw;
+}
   /* Changed to invis */
 h3{
   display: block;
